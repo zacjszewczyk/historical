@@ -35,4 +35,4 @@ This project enables Incident Responders to build a list of known Tor exit nodes
 
 ## License
 
-This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Read more about the license, and my other disclaimers, [at my website](https://zacs.site/disclaimers.html).
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Read more about the license, and my other disclaimers, [at my website](https://zacs.site/disclaimers.html). Generally speaking, this license allows individuals to remix this work provided they release their adaptation under the same license and cite this project as the original, and prevents anyone from turning this work or its derivatives into a commercial product.
