@@ -25,6 +25,13 @@ if (__name__ == "__main__"):
 
         # Only consider lines with links to historical Tor exit node lists.
         if ("https://collector.torproject.org/archive/exit-lists/exit-list" in line):
+            
+            # Specify dates to include
+            if (any([x in line for x in ["2021-03", "2021-02", "2021-01", "2020-12"]])):
+                print("FOUND!")
+            else:
+                continue
+
             # Extract the exit node list URL
             m = search("(?=http)http[^\"]+", line)
             
