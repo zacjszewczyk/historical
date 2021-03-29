@@ -27,7 +27,7 @@ if (__name__ == "__main__"):
         if ("https://collector.torproject.org/archive/exit-lists/exit-list" in line):
             
             # Specify dates to include
-            if (any([x in line for x in ["2021-02", "20201-03"]])):
+            if (any([x in line for x in ["2021-01", "2021-02", "20201-03"]])):
                 print("FOUND!")
             else:
                 continue
