@@ -27,7 +27,7 @@ if (__name__ == "__main__"):
         if ("https://collector.torproject.org/archive/exit-lists/exit-list" in line):
             
             # Specify dates to include
-            if (any([x in line for x in ["2021-03"]])):
+            if (any([x in line for x in ["2021-06"]])):
                 # print("FOUND!")
                 pass
             else:
@@ -81,6 +81,12 @@ if (__name__ == "__main__"):
             for root, dirs, files in walk(f"./tor/{folder}", topdown=True):
                 # Open the exit node listings.
                 for file in files:
+                    # Specify dates to include
+                    if (any([x in file for x in ["2021-06-09", "2021-06-10", "2021-06-11"]])):
+                        # print("FOUND!")
+                        pass
+                    else:
+                        continue
                     # Output a status message to the user.
                     print(f"Processing {root}/{file} ... ", end="", flush=True)
                     
